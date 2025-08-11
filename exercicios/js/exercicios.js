@@ -199,7 +199,7 @@ function exercicio21() {
 function exercicio22() {
     let numero = parseInt(prompt("Digite um numero"));
 
-    if (numero % 2 === 0 ) {
+    if (numero % 2 === 0) {
         alert("O numero é par");
     } else {
         alert("O numero é ímpar");
@@ -261,12 +261,101 @@ function exercicio27() {
     if (numero1 > numero2) {
         alert("Numero maior: " + numero1);
     } else if (numero1 < numero2) {
-        alert("Numero maior: " + numero2 );
+        alert("Numero maior: " + numero2);
     } else {
         alert("Os numeros sao iguais");
     }
 }
 
 function exercicio28() {
-    
+    let numero = parseInt(prompt("Digite um numero"));
+
+    if (numero > 0) {
+        alert("Positivo");
+    } else if (numero < 0) {
+        alert("Negativo");
+    } else {
+        alert("Zero");
+    }
+}
+
+function exercicio29() {
+    let media = parseFloat(prompt("Digite a media do aluno").replace(",", ".").replaceAll(" ", ""));
+
+    if (media >= 7) {
+        alert("Aprovado");
+    } else if (media >= 5 && media <=6.9) {
+        alert("Recuperação");
+    } else {
+        alert("Reprovado");
+    }
+}
+
+function exercicio30() {
+    let numero = parseInt(prompt("Digite um numero"));
+
+    if (numero % 3 === 0 && numero % 5 === 0) {
+        alert("Múltiplo de 3 e 5");
+    } else if (numero % 3 === 0) {
+        alert("Múltiplo de 3");
+    } else if (numero % 5 === 0) {
+        alert("Múltiplo de 5");
+    } else {
+        alert("Não é múltiplo de 3 nem de 5");
+    }
+}
+
+function exercicio31() {
+    let idade = parseInt(prompt("Digite sua idade"));
+    let ingresso = prompt("Você tem ingresso?");
+
+    if (idade >= 18 && ingresso === "sim") {
+        alert("Entrada permitida");
+    } else {
+        alert("Entrada negada");
+    }
+}
+
+function exercicio32() {
+    let valor = parseFloat(prompt("Digite o valor da compra").replace(",", ".").replaceAll(" ", ""));
+    let vip = prompt("Você é um cliente VIP?");
+
+    if (valor > 200 || vip === "sim") {
+        alert("Você ganhou um brinde");
+    } else {
+        alert("Sem bônus disponível");
+    }
+}
+
+function exercicio33() {
+    let login = prompt("Digite o login");
+    let senha = parseInt(prompt("Digite a senha"));
+
+    if (login === "admin" && senha === 1234) {
+        alert("Login bem-sucedido");
+    } else {
+        alert("Login ou senha inválidos");
+    }
+}
+
+function exercicio34() {
+    let lado1 = parseFloat(prompt("Digite o primeiro lado do triangulo").replace(",", ".").replaceAll(" ", ""));
+    let lado2 = parseFloat(prompt("Digite a segunda parte do triangulo").replace(",", ".").replaceAll(" ", ""));
+    let lado3 = parseFloat(prompt("Digite a terceira parte do triangulo").replace(",", ".").replaceAll(" ", ""));
+
+    if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+        alert("Triangulo valido");
+    } else {
+        alert("Triangulo invalido");
+    }
+}
+
+function exercicio35() {
+    let ano = parseInt(prompt("Digite o ano"));
+
+    if (ano % 4 === 0 && ano % 100 !== 0 || ano % 400 === 0) {
+        alert("Ano bissexto");
+    } else {
+        alert("Ano comum");
+    }
 }
