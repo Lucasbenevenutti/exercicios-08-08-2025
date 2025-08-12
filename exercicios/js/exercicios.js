@@ -284,7 +284,7 @@ function exercicio29() {
 
     if (media >= 7) {
         alert("Aprovado");
-    } else if (media >= 5 && media <=6.9) {
+    } else if (media >= 5 && media <= 6.9) {
         alert("Recuperação");
     } else {
         alert("Reprovado");
@@ -358,4 +358,147 @@ function exercicio35() {
     } else {
         alert("Ano comum");
     }
+}
+
+// LISTA DE EXERCICIOS DO GITHUB DO PROFESSOR
+
+function exerciociogit7() {
+    let numero = parseInt(prompt("Digite um numero"));
+
+    let variavel1 = "";
+    let variavel2 = "";
+    let variavel3 = "";
+    let variavel4 = "";
+    let variavel5 = "";
+    let variavel6 = "";
+    let variavel7 = "";
+
+    if (numero % 2 === 0) {
+        variavel1 = "par";
+    } else if (numero % 2 !== 0 || numero === 1) {
+        variavel1 = "impar";
+    } else {
+        variavel1 = "neutro";
+    }
+
+    if (numero > 0) {
+        variavel2 = "Positivo";
+    } else {
+        variavel2 = "Negativo";
+    }
+
+    if (numero > 10) {
+        variavel3 = "Maior que 10";
+    } else {
+        variavel3 = "Menor que 10";
+    }
+
+    if (numero <= 50) {
+        variavel4 = "Menor ou igual a 50";
+    } else {
+        variavel4 = "Maior que 50";
+    }
+
+    if (numero < -10) {
+        variavel5 = "menor que -10";
+    } else {
+        variavel5 = "Maior que -10";
+    }
+
+    if (numero >= 30) {
+        variavel6 = "Maior ou igual a 30";
+    } else {
+        variavel6 = "Menor que 30";
+    }
+
+    if (numero !== 1) {
+        variavel7 = "Diferente de 1";
+    } else {
+        variavel7 = "Igual a 1";
+    }
+
+    alert("Seu numero é:" +
+        "\n\nO numero é: " + variavel1 +
+        "\nO numero é: " + variavel2 +
+        "\nO numero é: " + variavel3 +
+        "\nO numero é: " + variavel4 +
+        "\nO numero é: " + variavel5 +
+        "\nO numero é: " + variavel6 +
+        "\nO numero é: " + variavel7);
+}
+
+function exerciociogit9() {
+    let numero1 = parseInt(prompt("Digite o primeiro numero"));
+    let numero2 = parseInt(prompt("Digite o segundo numero"));
+    let numero3 = parseInt(prompt("Digite o terceiro numero"));
+    let numero4 = parseInt(prompt("Digite o quarto numero"));
+
+    if (numero1 === numero2 && numero1 === numero3 && numero1 === numero4) {
+        alert("Pode ser um quadrado");
+    } else {
+        alert("Não pode ser um quadrado");
+    }
+}
+
+function exerciociogit10() {
+    let numero1 = parseInt(prompt("Digite o primeiro numero"));
+    let numero2 = parseInt(prompt("Digite o segundo numero"));
+    let numero3 = parseInt(prompt("Digite o terceiro numero"));
+    let numero4 = parseInt(prompt("Digite o quarto numero"));
+
+    if (numero1 === numero3 && numero2 === numero4) {
+        alert("Pode ser um retangulo");
+    } else if (numero1 === numero2 && numero3 === numero4) {
+        alert("Pode ser um retangulo");
+    } else if (numero1 === numero4 && numero2 === numero3) {
+        alert("Pode ser um retangulo");
+    } else {
+        alert("Não pode ser um retangulo");
+    }
+}
+
+function exerciociogit14() {
+    let numero1 = parseInt(prompt("Digite um numero"));
+    let numero2 = parseInt(prompt("Digite um numero"));
+    let numero3 = parseInt(prompt("Digite um numero"));
+
+    let maior = "";
+    let meio = "";
+    let menor = "";
+
+    if (numero1 >= numero2 && numero1 >= numero3 && numero2 >= numero3) {
+        maior = numero1;
+        meio = numero2;
+        menor = numero3;
+    } else if (numero1 >= numero2 && numero1 >= numero3 && numero3 >= numero2) {
+        maior = numero1;
+        meio = numero3;
+        menor = numero2;
+    } else if (numero2 >= numero1 && numero2 >= numero3 && numero1 >= numero3) {
+        maior = numero2;
+        meio = numero1;
+        menor = numero3;
+    } else if (numero2 >= numero1 && numero2 >= numero3 && numero3 >= numero1) {
+        maior = numero2;
+        meio = numero3;
+        menor = numero1;
+    } else if (numero3 >= numero1 && numero3 >= numero2 && numero1 >= numero2) {
+        maior = numero3;
+        meio = numero1;
+        menor = numero2;
+    } else if (numero3 >= numero1 && numero3 >= numero2 && numero2 >= numero1) {
+        maior = numero3;
+        meio = numero2; 
+        menor = numero1;
+    } else if (numero1 === numero2 && numero1 === numero3 && numero2 === numero3) {
+        maior = numero1;
+        meio = numero2;
+        menor = numero3;
+    }
+    
+    alert(menor + " - " + meio + " - " + maior);
+}
+
+function exerciociogit17() {
+
 }
