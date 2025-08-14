@@ -488,17 +488,123 @@ function exerciociogit14() {
         menor = numero2;
     } else if (numero3 >= numero1 && numero3 >= numero2 && numero2 >= numero1) {
         maior = numero3;
-        meio = numero2; 
+        meio = numero2;
         menor = numero1;
     } else if (numero1 === numero2 && numero1 === numero3 && numero2 === numero3) {
         maior = numero1;
         meio = numero2;
         menor = numero3;
     }
-    
+
     alert(menor + " - " + meio + " - " + maior);
 }
 
-function exerciociogit17() {
+function exerciciogit17() {
+    let dataNascimento = prompt("Digite o seu ano de nascimento");
 
+    let dataNova = dataNascimento.split("");
+
+    let anoMilhar = dataNova[0];
+    let anoCentena = dataNova[1];
+    let anoDezena = dataNova[2];
+    let ano = dataNova[3];
+
+    if (anoMilhar === "1") {
+        anoMilhar = "Mil";
+    } else if (anoMilhar === "2") {
+        anoMilhar = "Dois mil";
+    }
+
+    if (anoCentena === "1") {
+        anoCentena = "cento";
+    } else if (anoCentena === "0") {
+        anoCentena = "";
+    } else if (anoCentena === "2") {
+        anoCentena = "duzentos ";
+    } else if (anoCentena === "3") {
+        anoCentena = "trezentos";
+    } else if (anoCentena === "4") {
+        anoCentena = "quatrocentos";
+    } else if (anoCentena === "5") {
+        anoCentena = "quinhentos";
+    } else if (anoCentena === "6") {
+        anoCentena = "seiscentos";
+    } else if (anoCentena === "7") {
+        anoCentena = "setecentos";
+    } else if (anoCentena === "8") {
+        anoCentena = "oitocentos";
+    } else if (anoCentena === "9") {
+        anoCentena = "novecentos";
+    }
+
+    if (anoDezena === "1") {
+        if (ano = "1") {
+            anoDezena = "onze";
+        } else if (ano === "2") {
+            anoDezena = "doze";
+        } else if (ano === "3") {
+            anoDezena = "treze";
+        } else if (ano === "4") {
+            anoDezena = "quatorze";
+        } else if (ano === "5") {
+            anoDezena = "quinze";
+        } else if (ano === "6") {
+            anoDezena = "dezesseis";
+        } else if (ano === "7") {
+            anoDezena = "dezessete";
+        } else if (ano === "8") {
+            anoDezena = "dezoito";
+        } else if (ano === "9") {
+            anoDezena = "dezenove";
+        }
+        anoDezena = "dez";
+    } else if (anoDezena === "2") {
+        anoDezena = "vinte";
+    } else if (anoDezena === "3") {
+        anoDezena = "trinta";
+    } else if (anoDezena === "0") {
+        anoDezena = "";
+    } else if (anoDezena === "4") {
+        anoDezena = "quarenta";
+    } else if (anoDezena === "5") {
+        anoDezena = "cinquenta";
+    } else if (anoDezena === "6") {
+        anoDezena = "sessenta";
+    } else if (anoDezena === "7") {
+        anoDezena = "setenta";
+    } else if (anoDezena === "8") {
+        anoDezena = "oitenta";
+    } else if (anoDezena === "9") {
+        anoDezena = "noventa";
+    }
+
+    if (ano === "1") {
+        ano = "um";
+    } else if (ano === "0") {
+        ano = "";
+    } else if (ano === "2") {
+        ano = "dois";
+    } else if (ano === "3") {
+        ano = "três";
+    } else if (ano === "4") {
+        ano = "quatro";
+    } else if (ano === "5") {
+        ano = "cinco";
+    } else if (ano === "6") {
+        ano = "seis";
+    } else if (ano === "7") {
+        ano = "sete";
+    } else if (ano ==="8") {
+        ano = "oito";
+    } else if (ano === "9") {
+        ano = "nove";
+    }
+
+    alert(anoMilhar + " " + anoCentena + " " + anoDezena + " " + ano);
+}
+
+function exerciciogit18() {
+    let horaNascimento = prompt("Digite a hora do nascimento");
+
+    
 }
