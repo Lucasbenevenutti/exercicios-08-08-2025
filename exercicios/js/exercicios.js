@@ -537,74 +537,83 @@ function exerciciogit17() {
         anoCentena = "novecentos";
     }
 
-    if (anoDezena === "1") {
-        if (ano = "1") {
-            anoDezena = "onze";
-        } else if (ano === "2") {
-            anoDezena = "doze";
-        } else if (ano === "3") {
-            anoDezena = "treze";
-        } else if (ano === "4") {
-            anoDezena = "quatorze";
-        } else if (ano === "5") {
-            anoDezena = "quinze";
-        } else if (ano === "6") {
-            anoDezena = "dezesseis";
-        } else if (ano === "7") {
-            anoDezena = "dezessete";
-        } else if (ano === "8") {
-            anoDezena = "dezoito";
-        } else if (ano === "9") {
-            anoDezena = "dezenove";
-        }
-        anoDezena = "dez";
+    if (anoDezena === "1" && ano === "1") {
+        anoDezena = " e onze"
+        ano = "";
+    } else if (anoDezena === "1" && ano === "2") {
+        anoDezena = " e doze";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "3") {
+        anoDezena = " e treze";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "4") {
+        anoDezena = " e quatorze";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "5") {
+        anoDezena = " e quinze";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "6") {
+        anoDezena = " e dezesseis";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "7") {
+        anoDezena = " e dezessete";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "8") {
+        anoDezena = " e dezoito";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "9") {
+        anoDezena = " e dezenove";
+        ano = "";
+    } else if (anoDezena === "1" && ano === "0") {
+        anoDezena = " e dez";
+        ano = "";
     } else if (anoDezena === "2") {
-        anoDezena = "vinte";
+        anoDezena = "e vinte";
     } else if (anoDezena === "3") {
-        anoDezena = "trinta";
+        anoDezena = " e trinta";
     } else if (anoDezena === "0") {
         anoDezena = "";
     } else if (anoDezena === "4") {
-        anoDezena = "quarenta";
+        anoDezena = "e quarenta";
     } else if (anoDezena === "5") {
-        anoDezena = "cinquenta";
+        anoDezena = " e cinquenta";
     } else if (anoDezena === "6") {
-        anoDezena = "sessenta";
+        anoDezena = "e sessenta";
     } else if (anoDezena === "7") {
-        anoDezena = "setenta";
+        anoDezena = " e setenta";
     } else if (anoDezena === "8") {
-        anoDezena = "oitenta";
+        anoDezena = " e oitenta";
     } else if (anoDezena === "9") {
-        anoDezena = "noventa";
+        anoDezena = " e noventa";
     }
 
     if (ano === "1") {
-        ano = "um";
+        ano = " e um";
     } else if (ano === "0") {
         ano = "";
     } else if (ano === "2") {
-        ano = "dois";
+        ano = " e dois";
     } else if (ano === "3") {
-        ano = "três";
+        ano = " e três";
     } else if (ano === "4") {
-        ano = "quatro";
+        ano = " e quatro";
     } else if (ano === "5") {
-        ano = "cinco";
+        ano = " e cinco";
     } else if (ano === "6") {
-        ano = "seis";
+        ano = " e seis";
     } else if (ano === "7") {
-        ano = "sete";
-    } else if (ano ==="8") {
-        ano = "oito";
+        ano = " e sete";
+    } else if (ano === "8") {
+        ano = " e oito";
     } else if (ano === "9") {
-        ano = "nove";
+        ano = " e nove";
     }
 
-    alert(anoMilhar + " " + anoCentena + " " + anoDezena + " " + ano);
+    alert(anoMilhar + " " + anoCentena + anoDezena + ano);
 }
 
 function exerciciogit18() {
     let horaNascimento = prompt("Digite a hora do nascimento");
 
-    
+
 }
