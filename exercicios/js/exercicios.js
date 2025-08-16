@@ -615,5 +615,186 @@ function exerciciogit17() {
 function exerciciogit18() {
     let horaNascimento = prompt("Digite a hora do nascimento");
 
+    let horaNova = horaNascimento.split("");
+    // 13:13:13 - 1[0] - 3[1] - :[2] - 1[3] - 3[4] - :[5] - 1[6] - 3[7] 
+    let horaPrimeiro = horaNova[0];
+    let horaSegundo = horaNova[1];
+    let minutoPrimeiro = horaNova[3];
+    let minutoSegundo = horaNova[4];
+    let segundoPrimeiro = horaNova[6];
+    let seundoSegundo = horaNova[7];
 
+    let horaFinal = "";
+    let minutoFinal = "";
+    let segundoFinal = "";
+
+    if (horaPrimeiro === "0" && horaSegundo === "0") {
+        horaFinal = "meia noite";
+    } else if (horaPrimeiro === "0" && horaSegundo === "1") {
+        horaFinal = "uma hora";
+    } else if (horaPrimeiro === "0" && horaSegundo === "2") {
+        horaFinal = "duas horas";
+    } else if (horaPrimeiro === "0" && horaSegundo === "3") {
+        horaFinal = "três horas";
+    } else if (horaPrimeiro === "0" && horaSegundo === "4") {
+        horaFinal = "quatro horas";
+    } else if (horaPrimeiro === "0" && horaSegundo === "5") {
+        horaFinal = "cinco horas";
+    } else if (horaPrimeiro === "0" && horaSegundo === "6") {
+        horaFinal = "seis horas";
+    } else if (horaPrimeiro === "0" && horaSegundo === "7") {
+        horaFinal = "sete horas";
+    } else if (horaPrimeiro === "0" && horaSegundo === "8") {
+        horaFinal = "oito horas";
+    } else if (horaPrimeiro === "0" && horaSegundo === "9") {
+        horaFinal = "nove horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "0") {
+        horaFinal = "dez horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "1") {
+        horaFinal = "onze horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "2") {
+        horaFinal = "doze horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "3") {
+        horaFinal = "treze horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "4") {
+        horaFinal = "quatorze horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "5") {
+        horaFinal = "quinze horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "6") {
+        horaFinal = "dezesseis horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "7") {
+        horaFinal = "dezessete horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "8") {
+        horaFinal = "dezoito horas";
+    } else if (horaPrimeiro === "1" && horaSegundo === "9") {
+        horaFinal = "dezenove horas";
+    } else if (horaPrimeiro === "2" && horaSegundo === "0") {
+        horaFinal = "vinte horas";
+    } else if (horaPrimeiro === "2" && horaSegundo === "1") {
+        horaFinal = "vinte e uma horas";
+    } else if (horaPrimeiro === "2" && horaSegundo === "2") {
+        horaFinal = "vinte e duas horas";
+    } else if (horaPrimeiro === "2" && horaSegundo === "3") {
+        horaFinal = "vinte e três horas";
+    } else if (horaPrimeiro === "2" && horaSegundo === "4") {
+        horaFinal = "meia noite";
+    }
+
+    if (minutoPrimeiro === "0" && minutoSegundo === "0") {
+        minutoPrimeiro = "";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "1") {
+        minutoPrimeiro = " um minuto";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "2") {
+        minutoPrimeiro = " dois minutos";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "3") {
+        minutoPrimeiro = " três minutos";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "4") {
+        minutoPrimeiro = " quatro minutos";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "5") {
+        minutoPrimeiro = " cinco minutos";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "6") {
+        minutoPrimeiro = " seis minutos";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "7") {
+        minutoPrimeiro = " sete minutos";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "8") {
+        minutoPrimeiro = " oito minutos";
+    } else if (minutoPrimeiro === "0" && minutoSegundo === "9") {
+        minutoPrimeiro = " nove minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "0") {
+        minutoPrimeiro = " dez";
+        minutoSegundo = " minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "1") {
+        minutoPrimeiro = " onze minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "2") {
+        minutoPrimeiro = " doze minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "3") {
+        minutoPrimeiro = " treze minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "4") {
+        minutoPrimeiro = " quatorze minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "5") {
+        minutoPrimeiro = " quinze minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "6") {
+        minutoPrimeiro = " dezesseis minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "7") {
+        minutoPrimeiro = " dezessete minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "8") {
+        minutoPrimeiro = " dezoito minutos";
+    } else if (minutoPrimeiro === "1" && minutoSegundo === "9") {
+        minutoPrimeiro = " dezenove minutos";
+    } else if (minutoPrimeiro === "2" && minutoSegundo === "0") {
+        minutoPrimeiro = " vinte";
+        minutoSegundo = " minutos";
+    } else if (minutoPrimeiro === "3" && minutoSegundo === "0") {
+        minutoPrimeiro = " trinta";
+        minutoSegundo = " minutos";
+    } else if (minutoPrimeiro === "4" && minutoSegundo === "0") {
+        minutoPrimeiro = " quarenta";
+        minutoSegundo = " minutos";
+    } else if (minutoPrimeiro === "5" && minutoSegundo === "0") {
+        minutoPrimeiro = " cinquenta";
+        minutoSegundo = " minutos";
+    } else if (minutoSegundo === "1") {
+        minutoSegundo = " e um minuto"; 
+    } else if (minutoSegundo === "2") {
+        minutoSegundo = " e dois minutos"; 
+    } else if (minutoSegundo === "3") {
+        minutoSegundo = " e três minutos"; 
+    } else if (minutoSegundo === "4") {
+        minutoSegundo = " e quatro minutos"; 
+    } else if (minutoSegundo === "5") {
+        minutoSegundo = " e cinco minutos"; 
+    } else if (minutoSegundo === "6") {
+        minutoSegundo = " e seis minutos"; 
+    } else if (minutoSegundo === "7") {
+        minutoSegundo = " e sete minutos"; 
+    } else if (minutoSegundo === "8") {
+        minutoSegundo = " e oito minutos"; 
+    } else if (minutoSegundo === "9") {
+        minutoSegundo = " e nove minutos"; 
+    }
+
+    if (segundoPrimeiro === "0" && seundoSegundo === "0") {
+        segundoPrimeiro = "";
+        seundoSegundo = "";
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "1") {
+        segundoPrimeiro = "";
+        seundoSegundo = " e um segundo"
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "2") {
+        segundoPrimeiro = "";
+        seundoSegundo = " e dois segundos"
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "3") {
+        segundoPrimeiro = " e treze segundos";
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "4") {
+        segundoPrimeiro = " e quatro segundos";
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "5") {
+        segundoPrimeiro = " e cinco segundos";
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "6") {
+        segundoPrimeiro = " e seis segundos";
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "7") {
+        segundoPrimeiro = " e sete segundos";
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "8") {
+        segundoPrimeiro = " e oito segundos";
+    } else if (segundoPrimeiro === "0" && seundoSegundo === "9") {
+        segundoPrimeiro = " e nove segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "0") {
+        segundoPrimeiro = " e dez segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "1") {
+        segundoPrimeiro = " e onze segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "2") {
+        segundoPrimeiro = " e doze segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "3") {
+        segundoPrimeiro = " e treze segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "4") {
+        segundoPrimeiro = " e quatorze segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "5") {
+        segundoPrimeiro = " e quinze segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "6") {
+        segundoPrimeiro = " e dezesseis segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "7") {
+        segundoPrimeiro = " e dezessete segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "8") {
+        segundoPrimeiro = " e dezoito segundos";
+    } else if (segundoPrimeiro === "1" && seundoSegundo === "9") {
+        segundoPrimeiro = " e dezenove segundos";
+    }
 }
